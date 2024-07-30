@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testing on chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testNGAmazon.Test9">
+        <methods>
+          <include name="launch"/>
+          <include name="quit"/>
+          <include name="steps"/>
+        </methods>
+      </class> <!-- testNGAmazon.Test9 -->
+    </classes>
+  </test> <!-- Testing on chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Testing on firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testNGAmazon.Test5">
+        <methods>
+          <include name="quit"/>
+          <include name="launch"/>
+          <include name="steps"/>
+        </methods>
+      </class> <!-- testNGAmazon.Test5 -->
+      <class name="testNGAmazon.Test1">
+        <methods>
+          <include name="quit"/>
+          <include name="launch"/>
+          <include name="steps"/>
+        </methods>
+      </class> <!-- testNGAmazon.Test1 -->
+      <class name="testNGAmazon.Test7">
+        <methods>
+          <include name="quit"/>
+          <include name="launch"/>
+          <include name="steps"/>
+        </methods>
+      </class> <!-- testNGAmazon.Test7 -->
+      <class name="testNGAmazon.Test8">
+        <methods>
+          <include name="quit"/>
+          <include name="launch"/>
+          <include name="steps"/>
+        </methods>
+      </class> <!-- testNGAmazon.Test8 -->
+      <class name="testNGAmazon.Test2">
+        <methods>
+          <include name="quit"/>
+          <include name="launch"/>
+          <include name="steps"/>
+        </methods>
+      </class> <!-- testNGAmazon.Test2 -->
+    </classes>
+  </test> <!-- Testing on firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

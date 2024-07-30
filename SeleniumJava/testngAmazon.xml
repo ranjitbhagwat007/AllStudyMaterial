@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests">
+  <test thread-count="5" name="Testing on chrome">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testNGAmazon.Test1"/>
+      <class name="testNGAmazon.Test2"/>
+      <class name="testNGAmazon.Test3"/>
+      <class name="testNGAmazon.Test4"/>
+      <class name="testNGAmazon.Test5"/>
+      <class name="testNGAmazon.Test6"/>
+      <class name="testNGAmazon.Test7"/>
+      <class name="testNGAmazon.Test8"/>
+      <class name="testNGAmazon.Test9"/>
+      <class name="testNGAmazon.Test10"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="Testing on edge">
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testNGAmazon.Test1"/>
+      <class name="testNGAmazon.Test2"/>
+      <class name="testNGAmazon.Test3"/>
+      <class name="testNGAmazon.Test4"/>
+      <class name="testNGAmazon.Test5"/>
+      <class name="testNGAmazon.Test6"/>
+      <class name="testNGAmazon.Test7"/>
+      <class name="testNGAmazon.Test8"/>
+      <class name="testNGAmazon.Test9"/>
+      <class name="testNGAmazon.Test10"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="Testing on firefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testNGAmazon.Test1"/>
+      <class name="testNGAmazon.Test2"/>
+      <class name="testNGAmazon.Test3"/>
+      <class name="testNGAmazon.Test4"/>
+      <class name="testNGAmazon.Test5"/>
+      <class name="testNGAmazon.Test6"/>
+      <class name="testNGAmazon.Test7"/>
+      <class name="testNGAmazon.Test8"/>
+      <class name="testNGAmazon.Test9"/>
+      <class name="testNGAmazon.Test10"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

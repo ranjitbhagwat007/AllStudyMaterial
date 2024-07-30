@@ -1,0 +1,487 @@
+<html>
+<head>
+<title>TestNG:  Testing on firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Testing on firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 23 21:50:50 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>277 seconds (277443 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGAmazon.Test1.steps()'><b>steps</b><br>Test class: testNGAmazon.Test1</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;a-link-normal s-no-outline&quot; href=&quot;/sspa/click?ie=UTF8&amp;spc=MTo0NTg2NTMxODAxNzg3MTc0OjE3MTkxNTk2NzE6c3BfYXRmOjMwMDIyOTc4MTE3MTQzMjo6MDo6&amp;url=%2FRed-Tape-Athleisure-Slip-Resistance-Mitigation%2Fdp%2FB0CXJ8QJVF%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.D9RX8Pqj2rCtEjXqXPQiHbRwMO-jRAjuH2cnUcEq-tLZA7gEepbwVLfwWoNaBGlQD_VBNCjjB0miYbpNUR8unkAZiTpKk3TPxdQQDsnokPWQ_WYz9usbmES6nET0b8MPxtFOISYiAPrixz0Opd08Ji1_I4i4FIPAKEOK_SuVAXSaME_GaKFaHEEUtzu9sBOHQLVgZIfdyAcLSdi6_knrCYl5jEmKUhZgp6Gbt679_BXoIeMUGEccavTCJaoiuPdVk_AzNL9BkV9yxC9f4BVcR3SV4X6Qi8GHHmZ5c8hh5KM.eUBHzkz63gwvi4OQEwtRaXo7WzGkW7Snu90J3ugzSU4%26dib_tag%3Dse%26keywords%3Dshoes%26qid%3D1719159671%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d1030ce1-7426-45e6-bbf1-4f6dbf822d5b, clickElement {id=09af5da9-8f66-4c28-8c17-c4e45504b740}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:7698, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 112928, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:7698/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (d1030ce1-7426-45e6-bbf1-4f6dbf822d5b)] -&gt; xpath: (//a[@class=&apos;a-link-normal s-no-outline&apos;])[1]]
+Session ID: d1030ce1-7426-45e6-bbf1-4f6dbf822d5b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test1.steps(Test1.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1344163390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344163390'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;a-link-normal s-no-outline&quot; href=&quot;/sspa/click?ie=UTF8&amp;spc=MTo0NTg2NTMxODAxNzg3MTc0OjE3MTkxNTk2NzE6c3BfYXRmOjMwMDIyOTc4MTE3MTQzMjo6MDo6&amp;url=%2FRed-Tape-Athleisure-Slip-Resistance-Mitigation%2Fdp%2FB0CXJ8QJVF%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.D9RX8Pqj2rCtEjXqXPQiHbRwMO-jRAjuH2cnUcEq-tLZA7gEepbwVLfwWoNaBGlQD_VBNCjjB0miYbpNUR8unkAZiTpKk3TPxdQQDsnokPWQ_WYz9usbmES6nET0b8MPxtFOISYiAPrixz0Opd08Ji1_I4i4FIPAKEOK_SuVAXSaME_GaKFaHEEUtzu9sBOHQLVgZIfdyAcLSdi6_knrCYl5jEmKUhZgp6Gbt679_BXoIeMUGEccavTCJaoiuPdVk_AzNL9BkV9yxC9f4BVcR3SV4X6Qi8GHHmZ5c8hh5KM.eUBHzkz63gwvi4OQEwtRaXo7WzGkW7Snu90J3ugzSU4%26dib_tag%3Dse%26keywords%3Dshoes%26qid%3D1719159671%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d1030ce1-7426-45e6-bbf1-4f6dbf822d5b, clickElement {id=09af5da9-8f66-4c28-8c17-c4e45504b740}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:7698, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 112928, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:7698/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (d1030ce1-7426-45e6-bbf1-4f6dbf822d5b)] -&gt; xpath: (//a[@class=&apos;a-link-normal s-no-outline&apos;])[1]]
+Session ID: d1030ce1-7426-45e6-bbf1-4f6dbf822d5b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test1.steps(Test1.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>5</td>
+<td>testNGAmazon.Test1@550dbc7a</td></tr>
+<tr>
+<td title='testNGAmazon.Test7.steps()'><b>steps</b><br>Test class: testNGAmazon.Test7</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;select id=&quot;searchDropdownBox&quot; class=&quot;nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown&quot; name=&quot;url&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b82e9d27-aa6a-4322-b9b4-b1aee85a7799, clickElement {id=bb585234-be05-477e-b0cc-8f09863c655a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:10367, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 115848, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:10367/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (b82e9d27-aa6a-4322-b9b4-b1aee85a7799)] -&gt; id: searchDropdownBox]
+Session ID: b82e9d27-aa6a-4322-b9b4-b1aee85a7799
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test7.steps(Test7.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace989364824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace989364824'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;select id=&quot;searchDropdownBox&quot; class=&quot;nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown&quot; name=&quot;url&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b82e9d27-aa6a-4322-b9b4-b1aee85a7799, clickElement {id=bb585234-be05-477e-b0cc-8f09863c655a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:10367, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 115848, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:10367/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (b82e9d27-aa6a-4322-b9b4-b1aee85a7799)] -&gt; id: searchDropdownBox]
+Session ID: b82e9d27-aa6a-4322-b9b4-b1aee85a7799
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test7.steps(Test7.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>testNGAmazon.Test7@1e1a0406</td></tr>
+<tr>
+<td title='testNGAmazon.Test8.steps()'><b>steps</b><br>Test class: testNGAmazon.Test8</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;select id=&quot;searchDropdownBox&quot; class=&quot;nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown&quot; name=&quot;url&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [35f507cc-ddfc-463b-8c42-be9b4ff8306a, clickElement {id=9f6c2c16-46f7-400d-99dc-8776f496b19e}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:45578, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 105936, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45578/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (35f507cc-ddfc-463b-8c42-be9b4ff8306a)] -&gt; id: searchDropdownBox]
+Session ID: 35f507cc-ddfc-463b-8c42-be9b4ff8306a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test8.steps(Test8.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace828780164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace828780164'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;select id=&quot;searchDropdownBox&quot; class=&quot;nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown&quot; name=&quot;url&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [35f507cc-ddfc-463b-8c42-be9b4ff8306a, clickElement {id=9f6c2c16-46f7-400d-99dc-8776f496b19e}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:45578, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 105936, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45578/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (35f507cc-ddfc-463b-8c42-be9b4ff8306a)] -&gt; id: searchDropdownBox]
+Session ID: 35f507cc-ddfc-463b-8c42-be9b4ff8306a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test8.steps(Test8.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>testNGAmazon.Test8@3cebbb30</td></tr>
+<tr>
+<td title='testNGAmazon.Test2.steps()'><b>steps</b><br>Test class: testNGAmazon.Test2</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;a-link-normal s-no-outline&quot; href=&quot;/sspa/click?ie=UTF8&amp;spc=MTo3Njg1OTQzNTMxODk0MTc0OjE3MTkxNTk2OTM6c3BfYXRmOjMwMDExODY0NjI2NDgzMjo6MDo6&amp;url=%2FRedmi-Storage-Bezel-Less-Slimmest-Pro-Grade%2Fdp%2FB0CQPGG8KG%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.brV7rG-zDD0MO_wZuT9UcEAP_ti-d5R7ePuzmId1CZeJ9Kir5LYsjYoSVbVMbOJi4X_harf4XUwN6HgnGqIq5OUXbEd0-WeV2WbMtwBaGw10_cAg__88k0lAc9mnIjaEuzjHCQNizlNwSp4PBNzUVw5PyD15BiooNSRLfPyH0gyTjgI-zEaa0tjXWF_K-lTf4b7SwWxpFPqvA4Rxo8sZEFNLiw1S3BnQzjbm9MDJCSE.o-5W16Yl3mwoZamZyxZi9dK7q_GQjPNKr7-IygG9-1o%26dib_tag%3Dse%26keywords%3Dmobile%26qid%3D1719159693%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2f11ba93-26b8-4c0e-be69-5bb79effa4d5, clickElement {id=e1073a67-5261-47b1-9083-70ec7d9ab450}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:37824, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 94192, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:37824/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (2f11ba93-26b8-4c0e-be69-5bb79effa4d5)] -&gt; xpath: (//a[@class=&apos;a-link-normal s-no-outline&apos;])[1]]
+Session ID: 2f11ba93-26b8-4c0e-be69-5bb79effa4d5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test2.steps(Test2.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1679986212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1679986212'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;a-link-normal s-no-outline&quot; href=&quot;/sspa/click?ie=UTF8&amp;spc=MTo3Njg1OTQzNTMxODk0MTc0OjE3MTkxNTk2OTM6c3BfYXRmOjMwMDExODY0NjI2NDgzMjo6MDo6&amp;url=%2FRedmi-Storage-Bezel-Less-Slimmest-Pro-Grade%2Fdp%2FB0CQPGG8KG%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.brV7rG-zDD0MO_wZuT9UcEAP_ti-d5R7ePuzmId1CZeJ9Kir5LYsjYoSVbVMbOJi4X_harf4XUwN6HgnGqIq5OUXbEd0-WeV2WbMtwBaGw10_cAg__88k0lAc9mnIjaEuzjHCQNizlNwSp4PBNzUVw5PyD15BiooNSRLfPyH0gyTjgI-zEaa0tjXWF_K-lTf4b7SwWxpFPqvA4Rxo8sZEFNLiw1S3BnQzjbm9MDJCSE.o-5W16Yl3mwoZamZyxZi9dK7q_GQjPNKr7-IygG9-1o%26dib_tag%3Dse%26keywords%3Dmobile%26qid%3D1719159693%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2f11ba93-26b8-4c0e-be69-5bb79effa4d5, clickElement {id=e1073a67-5261-47b1-9083-70ec7d9ab450}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:37824, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 94192, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:37824/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (2f11ba93-26b8-4c0e-be69-5bb79effa4d5)] -&gt; xpath: (//a[@class=&apos;a-link-normal s-no-outline&apos;])[1]]
+Session ID: 2f11ba93-26b8-4c0e-be69-5bb79effa4d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test2.steps(Test2.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>2</td>
+<td>testNGAmazon.Test2@21282ed8</td></tr>
+<tr>
+<td title='testNGAmazon.Test5.steps()'><b>steps</b><br>Test class: testNGAmazon.Test5</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;a-size-medium a-color-base a-text-normal&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [51afbe24-3884-45cd-b2b1-31ca681ff785, clickElement {id=e4a55e11-ddf6-4e4e-a594-519888bd6c9b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:48119, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 97700, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48119/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (51afbe24-3884-45cd-b2b1-31ca681ff785)] -&gt; xpath: (//span[@class=&apos;a-size-medium a-color-base a-text-normal&apos;])[12]]
+Session ID: 51afbe24-3884-45cd-b2b1-31ca681ff785
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test5.steps(Test5.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1633895641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1633895641'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;a-size-medium a-color-base a-text-normal&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [51afbe24-3884-45cd-b2b1-31ca681ff785, clickElement {id=e4a55e11-ddf6-4e4e-a594-519888bd6c9b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:48119, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 97700, moz:profile: C:\Users\Shree\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48119/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (51afbe24-3884-45cd-b2b1-31ca681ff785)] -&gt; xpath: (//span[@class=&apos;a-size-medium a-color-base a-text-normal&apos;])[12]]
+Session ID: 51afbe24-3884-45cd-b2b1-31ca681ff785
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testNGAmazon.Test5.steps(Test5.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>7</td>
+<td>testNGAmazon.Test5@437da279</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGAmazon.Test10.steps()'><b>steps</b><br>Test class: testNGAmazon.Test10</td>
+<td></td>
+<td>0</td>
+<td>testNGAmazon.Test10@290222c1</td></tr>
+<tr>
+<td title='testNGAmazon.Test9.steps()'><b>steps</b><br>Test class: testNGAmazon.Test9</td>
+<td></td>
+<td>9</td>
+<td>testNGAmazon.Test9@12aba8be</td></tr>
+<tr>
+<td title='testNGAmazon.Test6.steps()'><b>steps</b><br>Test class: testNGAmazon.Test6</td>
+<td></td>
+<td>15</td>
+<td>testNGAmazon.Test6@23c30a20</td></tr>
+<tr>
+<td title='testNGAmazon.Test3.steps()'><b>steps</b><br>Test class: testNGAmazon.Test3</td>
+<td></td>
+<td>9</td>
+<td>testNGAmazon.Test3@36916eb0</td></tr>
+<tr>
+<td title='testNGAmazon.Test4.steps()'><b>steps</b><br>Test class: testNGAmazon.Test4</td>
+<td></td>
+<td>6</td>
+<td>testNGAmazon.Test4@7bab3f1a</td></tr>
+</table><p>
+</body>
+</html>
